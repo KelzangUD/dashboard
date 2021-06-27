@@ -109,7 +109,7 @@ fetch(
       hr23,
     ] = date;
     var xlabel = [
-      `Now:${current}:00`,
+      `${current}:00`,
       `${hr1}:00`,
       `${hr2}:00`,
       `${hr3}:00`,
@@ -197,7 +197,7 @@ fetch(
       hr23a,
     ] = date1;
     var xlabel = [
-      `Now:${currenta}:00`,
+      `${currenta}:00`,
       `${hr1a}:00`,
       `${hr2a}:00`,
       `${hr3a}:00`,
