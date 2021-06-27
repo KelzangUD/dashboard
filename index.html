@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- Linking with CSS -->
+    <link rel="stylesheet" href="style/style.css">
+
+    <title>Dashboard</title>
+  </head>
+  <body>
+    <nav>
+        <h3>🗂Dashboard</h3>
+        <div class="header">
+            <ul>
+                <li><a href="#weather">Weather</a></li>
+                <li><a href="#production">Production</a></li>
+                <li><a href="">Vegetables</a></li>
+            </ul>
+        </div>
+    </nav>
+    <main>
+        <section id="weather" class="weather">
+            <h2>WEATHER DATA</h2>
+            <div class="row">
+                <div class="col-3">
+                    <h3>Your Location</h3>
+                    <div id="card"></div>
+                </div>
+                <div class="col-9">
+                    <section class="dayForcast">
+                        <h3>1 Week forecast</h3>
+                        <div>
+                            <table class="table table-bordered table-hover">
+                                <thead class="table-dark">
+                                  <tr>
+                                    <th>Date</th>
+                                    <th>Temperature</th>
+                                    <th>Description</th>
+                                  </tr>
+                                </thead>
+                                <tbody id="oneWeekForcast">
+                                </tbody>
+                            </table>
+                        </div>
+                    </section>
+                </div>
+            </div>
+            <div class="hourly">
+                <h3>Hourly forecast</h3>
+                <div class="row">
+                    <div class="col">
+                        <canvas id="hourly" width="200" height="100"></canvas>
+                    </div>
+                    <div class="col">
+                        <canvas id="hourly1" width="200" height="100"></canvas>
+                    </div>
+                </div>
+              </div>
+        <section class="historicalData">
+            <button type="button" class="btn btn-dark">Historical Data</button>
+        </section>
+    </section>
+        <section id="production">
+            <h2>PRODUCTION</h2>
+            <h3>Crop Production</h3>
+            <table class="table table-hover table-bordered">
+                <thead class="table-dark">
+                  <tr>
+                    <th scope="col">Crop</th>
+                    <th scope="col">Current Qty(in Kg)</th>
+                    <th scope="col">Forecast(in Kg)</th>
+                  </tr>
+                </thead>
+                <tbody id="vegTable">
+                </tbody>
+              </table>
+              <h3>Disease</h3>
+            <table class="table table-hover table-bordered">
+                <thead class="table-dark">
+                  <tr>
+                    <th>Crop</th>
+                    <th>Disease</th>
+                    <th>Temperature(in &#8451)</th>
+                    <th>Rain</th>
+                    <th>Humidity</th>
+                    <th>Patogen</th>
+                  </tr>
+                </thead>
+                <tbody id="disTable">
+                </tbody>
+              </table>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                <h3>ABOUT</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam maxime, sunt temporibus, ex repudiandae quos dolorem est culpa excepturi labore vitae! Impedit officiis modi asperiores laudantium commodi vitae aut temporibus!</p>
+                </div>
+                <div class="col">
+                <h3>Contact</h3>
+                <p>📞 +975-12345678</p>
+                <p>📂 fuzzy@gmail.com</p>
+                </div>
+                <div class="col">
+                <h3>More Info</h3>
+                <p>🌍 website</p>
+                </div>
+            </div>
+            </div>
+        </footer>
+
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <!--Firebase connection -->
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-database.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+        https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-analytics.js"></script>
+
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+        https://firebase.google.com/docs/web/setup#available-libraries -->
+    <!--including chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.3.2/dist/chart.min.js"></script>
+
+    <script src="script.js"></script>
+
+
+  </body>
+</html>
