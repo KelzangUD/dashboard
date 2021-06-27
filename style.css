@@ -1,0 +1,60 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+html {
+  scroll-behavior: smooth;
+}
+nav {
+  padding: 2rem;
+  display: flex;
+  background-color: #231e23;
+  color: #dddddd;
+}
+nav h3 {
+  margin-right: 20rem;
+}
+nav .header ul {
+  list-style-type: none;
+  display: flex;
+}
+nav .header ul li {
+  margin-right: 1.5rem;
+}
+nav .header ul li a {
+  text-decoration: none;
+  color: #d6d2c4;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+main {
+  background-color: #f9f9f9;
+  padding: 0 2rem;
+}
+.dashboard {
+  display: flex;
+}
+.dashboard h1 {
+  margin-right: 1rem;
+}
+.weather {
+  background-color: #ededed;
+  padding: 2rem;
+}
+#weather {
+  scroll-behavior: smooth;
+}
+.card-header {
+  text-align: center;
+}
+.historicalData {
+  text-align: center;
+}
+#production {
+  background-color: #d6d2c4;
+  padding: 2rem;
+}
+footer {
+  background-color: #231e23;
+  color: #dddddd;
+}
